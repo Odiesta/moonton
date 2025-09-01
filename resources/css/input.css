@@ -8,5 +8,5 @@
 
 .input-primary-outline {
     @apply bg-white focus:bg-white border-alerange focus:border-alerange;
-    @apply file:bg-alerange file:text-white file-rounded-md file:p-2;
+    @apply file:bg-alerange file:text-white file:p-2;
 }
