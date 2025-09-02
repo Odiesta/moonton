@@ -1,31 +1,21 @@
 import ReactPlayer from "react-player";
 import { Link } from "@inertiajs/react";
-import { useEffect, useState } from "react";
 
 export default function show() {
-    const [hasWindow, setHasWindow] = useState(false);
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            setHasWindow(true);
-        }
-    }, []);
-
     return (
         <section
             className="mx-auto w-screen h-screen relative watching-page font-poppins bg-form-bg"
             id="stream"
         >
             <div className="pt-[100px]">
-                {hasWindow && (
-                    <ReactPlayer
-                        src="https://www.youtube.com/dQw4w9WgXcQ"
-                        controls
-                        playing
-                        muted
-                        width={"100%"}
-                        height={"850px"}
-                    />
-                )}
+                <ReactPlayer
+                    src="https://www.youtube.com/dQw4w9WgXcQ"
+                    controls
+                    playing
+                    muted
+                    width={"100%"}
+                    height={"850px"}
+                />
             </div>
 
             {/* Button back to dashboard */}
