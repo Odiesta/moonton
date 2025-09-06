@@ -37,7 +37,6 @@ const Input = forwardRef(function Input(
             ref={localRef}
             autoComplete={props.autoComplete}
             required={props.required}
-            onChange={(e) => props.handleChange && props.handleChange(e)}
             placeholder={placeholder}
         />
     );
